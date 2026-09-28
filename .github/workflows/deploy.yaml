@@ -123,7 +123,7 @@ jobs:
       # 部署到 EdgeOne Makers（官方 CLI 命令方式）
       # ───────────────────────────────────────────────────────────────────────
       - name: Deploy to EdgeOne Makers
-        run: npx edgeone makers deploy ./dist -n "my-blog-theme" -t ${{ secrets.EDGEONE_API_TOKEN }}
+        run: npx edgeone makers deploy ./dist -n "my-blog-upload" -t ${{ secrets.EDGEONE_API_TOKEN }}
 
       - name: Summarize
         if: always()
